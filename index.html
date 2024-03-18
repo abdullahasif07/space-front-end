@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Handjet&family=Kanit&display=swap" rel="stylesheet">    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+    <!-- header starts-->
+    <section>
+
+        <nav class="navbar navbar-expand-lg border border-white bg-white ">
+            <div class="container-fluid">
+                <i class="fas fa-user-astronaut mx-3 fa-2x"></i>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-3" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#"> 
+                                <i class="fas fa-home" style="color: rgb(80, 32, 103);"></i> <button class="btn btn-outline-dark " style="color: rgb(80, 32, 103);" >Home</button><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> 
+                                <i class="fa-solid fa-rocket" style="color: rgb(80, 32, 103);"></i> <button class="btn btn-outline-dark " style="color: rgb(80, 32, 103);" >NASA</button> <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"> 
+                                <i class="fa-regular fa-newspaper" style="color: rgb(80, 32, 103);"></i>  <button class="btn btn-outline-dark " style="color: rgb(80, 32, 103);" >News</button> <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark " style="color: rgb(80, 32, 103);" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </section>
+    <!-- header ends-->
+
+    <!-- carousel starts  -->
+    <section>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="assets/images/black_hole.jpg" class=" w-100 carousel_h" alt="...">
+                    <div class="carousel-caption">
+                        SPACE FOR ALL
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/space2.jpg" class="d-block w-100 carousel_h" alt="...">
+                    <div class="carousel-caption">
+                        SPACE FOR ALL
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/space3.jpg" class="d-block w-100 carousel_h" alt="...">
+                    <div class="carousel-caption">
+                        SPACE FOR ALL
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/images/nebula.jpg" class="d-block w-100 carousel_h" alt="...">
+                    <div class="carousel-caption">
+                        SPACE FOR ALL
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- carousel ends -->
+
+    <!-- card section starts -->
+    <section class="p-3" style="background-color: white;">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mx-3">
+            <div class="col">
+                <div class="card h-100" onclick="showModal('modal1', 'Quasar')">
+                    <img src="assets/images/quasar.jpg" class="card-img-top img_h" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">QUASAR</h5>
+                        <p class="card-text">A quasar is a powerful and extremely distant celestial object found at the
+                            center of some galaxies. It emits an intense amount of energy, making it one of the
+                            brightest and most energetic objects in the universe.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="showModal('modal2', 'EARTH FROM SPACE')">
+                    <img src="assets/images/space.jpg" class="card-img-top img_h" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">EARTH FROM SPACE</h5>
+                        <p class="card-text">The majestic view of Earth from Space as captured by the International
+                            Space Station.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="showModal('modal3', 'VENUS ALIGNS WITH MOON')">
+                    <img src="assets/images/venus.jpeg" class="card-img-top img_h" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">VENUS ALIGNS WITH MOON</h5>
+                        <p class="card-text">The moment when Venus came to greet our very own moon, aligning right at
+                            the top of the moon.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card section ends  -->
+
+
+    <!-- news section starts     -->
+    <section class="p-3">
+        <div class="container mx-4 my-5">
+            <div class="row border border-white rounded-4">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h1 class="text-white">JAMES WEBB TELESCOPE</h1>
+                        <p class="text-white mt-5  p_font ">The James Webb Space Telescope is a space telescope specifically
+                            designed to conduct infrared astronomy. Its high-resolution and high-sensitivity instruments
+                            allow it to view objects too old, distant, or faint for the Hubble Space Telescope</p>
+                    </div>
+                </div>
+                <div class="col d-flex px-0">
+                    <img src="assets/images/jameswebb.jpg" class="img-fluid w-100 border rounded-4">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-4 my-5">
+            <div class="row border border-white rounded-4">
+                <div class="col-lg-6 d-flex px-0">
+                    <img src="assets/images/iss.jpeg" class="img-fluid w-100 border rounded-4">
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h1 class="text-white text-end" >INTERNATIONAL SPACE STATION</h1>
+                        <p class="text-white mt-5 ms-lg-5 p_font text-end">The International Space Station is the largest modular space
+                            station in low Earth orbit. The project involves five space agencies: the United States'
+                            NASA, Russia's Roscosmos, Japan's JAXA, Europe's ESA, and Canada's CSA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-4 my-5">
+            <div class="row border border-white rounded-4">
+                <div class="col">
+                    <div class="p-5">
+                        <h1 class="text-white">SPACE X FALCON 9</h1>
+                        <p class="text-white mt-5  p_font">Falcon 9 is a partially reusable medium-lift launch vehicle that
+                            can carry cargo and crew into Earth orbit, designed, manufactured and launched by American
+                            aerospace company SpaceX. It can also be used as an expendable heavy-lift launch vehicle.
+                            The first Falcon 9 launch was in June 2010.</p>
+                    </div>
+                </div>
+                <div class="col d-flex px-0">
+                    <img src="assets/images/falcon.jpg" class="img-fluid w-100 border rounded-4">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- news section ends  -->
+
+    </section>
+
+    <!-- modal section starts  -->
+    <section>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel1"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal_1_body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"id="modal_2_body" >
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel3"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal_3_body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- quotes section starts  -->
+
+
+<section class="p-3" style="background-color: white;">
+    <div class="container">
+        <div class="card mb-3 mx-auto w-75">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-2">
+                    <img src="assets/images/neil.jpg" class="img-fluid rounded-start " alt="...">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">NEIL ARMSTRONG</h5>
+                        <p class="card-text">THAT’S ONE SMALL STEP FOR MAN, ONE GIANT LEAP FOR MANKIND.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 mx-auto w-75">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="assets/images/buzz.jpg" class="img-fluid rounded-start h-25" alt="...">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">BUZZ ALDRIN</h5>
+                        <p class="card-text">Your mind is like a parachute: if it isn't open, it doesn't work."</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 mx-auto w-75">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="assets/images/jfk.jpg" class="img-fluid rounded-start h-25" alt="...">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">JOHN F. KENNEDY</h5>
+                        <p class="card-text">"I believe that this Nation should commit itself to achieving the goal,
+                            before this decade is out, of landing a man on the moon and returning him safely to earth.
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- quotes section ends  -->
+
+    <!-- footer starts  -->
+
+    <section>
+
+<div class="footer p-3 text-white" style="background-color: rgb(43, 3, 61);">
+    <div class="row">
+        <div class="col-lg-4 justify-content-center">
+            <img src="assets/images/logo.png" class="h-25">
+        </div>
+        <div class="col-lg-4">
+            <h4 class="my-4">CONTACT</h4>
+            <p>
+                <a class="nav-link text-white" href="#"> <!-- Icon is now before the "Home" text -->
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i> PHONE : 03188400490 <span class="sr-only">(current)</span>
+                </a>
+            </p>
+            <p>
+                <a class="nav-link text-white" href="#"> <!-- Icon is now before the "Home" text -->
+                    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i> EMAIL : abdullahasif7@outlook.com <span class="sr-only">(current)</span>
+                </a>
+            </p>
+            <p>
+                <a class="nav-link text-white" href="#"> <!-- Icon is now before the "Home" text -->
+                    <i class="fa-solid fa-fax" style="color: #ffffff;"></i> FAX : +920838308090 <span class="sr-only">(current)</span>
+                </a>
+            </p>
+            
+                   
+        </div>
+        <div class="col-lg-4">
+            <h4 class="my-4">ADDRESS</h4>
+            <div class="row">
+                <div class="col-lg-1">
+                    <i class="fa-solid fa-map-pin me-3" style="color: #ffffff;"></i>
+                </div>
+                <div class="col-lg-11">
+                    <p>300 Hidden Figures Way<br> SW Washington, D.C.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <!-- footer ends  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+
+</html>
