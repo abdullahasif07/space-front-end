@@ -1,0 +1,57 @@
+.carousel-caption {
+    position: absolute;
+    /* top: 10%;
+    left: 5%;
+    right:80% ; */
+    color: white;
+    font-size: 100px;
+    padding: 8px;
+    width: 300px;
+    left: 5%;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 30px;
+
+}
+ul {
+    list-style-type: none;
+  }
+
+.p_font
+{
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Handjet', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-nav li.nav-item:not(:last-child) a.nav-link {
+    border-right: 1px solid black;
+    padding-right: 10px; /* Adjust the padding as needed */
+}
+.custom-card {
+    height: 50%;
+}
+.btn-outline-dark:hover {
+    color: white !important;
+    background-color:rgb(80, 32, 103);
+}
+
+.h-25 {
+    height: 200px !important;
+}
+.img_h
+{
+    height: 300px;
+}
+
+.carousel_h
+{
+    height: 600px;
+}
+
+
+body
+{
+    background-color: black;
+}
+
